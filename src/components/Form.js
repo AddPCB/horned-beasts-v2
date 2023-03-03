@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultTip = "Select a number to show only Beasts with that number of horns.";
+const defaultTip = "Once selected, only Beasts with that many horns are shown.";
 
 function Form({ hornsFilter, setHornsFilter }) {
   const [tip, setTip] = useState(defaultTip);

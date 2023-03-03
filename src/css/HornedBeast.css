@@ -1,8 +1,6 @@
 .HornedBeast {
   position: relative;
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
   border: 0.2rem peru inset;
@@ -11,9 +9,9 @@
 }
 
 .HornedBeast img {
+  width:100%;
+  height:100%;
   position: absolute;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
   cursor: zoom-in;

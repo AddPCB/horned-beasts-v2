@@ -1,51 +1,98 @@
-html, body, #root, .App {
+html {
+  font-size: calc(10px + 0.390625vw);
+}
+html,
+body,
+#root,
+.App, .HornedBeast, .HornedBeast.img, .HornedBeast.figure {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height:100%;
+  width:100%;
+  box-sizing:border-box;
 }
 .App {
-  display: grid; 
-  grid-auto-rows: 3fr 16fr 1fr; 
-  justify-content: center; 
-  align-items: stretch; 
+  display: flex;
+  flex-direction:column;
+  justify-content: stretch;
+  align-items:stretch;
   background: url(../images/menagerie.jpg);
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 }
-
+.Header {
+height:15%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  /* Gradient overlay for background image */
+  background-image: url("../images/leather.jpg"),
+    radial-gradient(
+      ellipse at center,
+      rgba(216, 155, 41, 0.8),
+      rgba(153, 101, 5, 0.85),
+      rgba(110, 73, 25, 0.99),
+      rgba(85, 57, 20, 1),
+      rgb(51, 36, 16, 1)
+    );
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: #38190d groove 0.5rem;
+  box-shadow: inset 0 0 5px black;
+  /* Gradient overlay for element background */
+}
 
 .Main {
-  grid-row: 2;
-  display: grid; 
-  margin:0.3rem 3.5rem;
-  padding:0.5rem 1rem 0.7rem 1rem;
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-  gap: 1rem 1rem; 
-  justify-content: space-evenly; 
-  align-content: space-evenly; 
-  justify-items: center; 
-  align-items: center; 
+height:85%;
+  display: grid;
+  margin: 0.3rem 1.5rem 0.3rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.7rem 0.7rem;
+  align-items: space-between;
+  justify-content:space-between;
   background-color: rgba(231, 199, 109, 0.342);
-  border:0.5rem peru ridge;
+  border: 0.5rem peru ridge;
 }
-
+.Footer {
+  height:5%;
+  display: flex;
+  /* Gradient overlay for background image */
+  background-image: url("../images/leather.jpg"),
+    radial-gradient(
+      ellipse at center,
+      rgba(216, 155, 41, 0.9),
+      rgba(153, 101, 5, 0.9),
+      rgba(110, 73, 25, 0.99),
+      rgba(85, 57, 20, 1),
+      rgb(51, 36, 16, 1)
+    );
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+  border-top: #38190d ridge 0.5rem;
+  box-shadow: inset 0 0 5px black;
+  justify-content: center;
+  align-items:flex-end;
+}
 h3 {
-  color:#000;
-  font-size:0.55rem;
-  line-height:0.6rem;
-  letter-spacing:0.05rem;
+  color: #000;
+  font-size: 0.55rem;
+  line-height: 0.6rem;
+  letter-spacing: 0.05rem;
   margin: 0;
-  padding:0;
-  text-shadow: 0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF;
-  overflow:auto;
+  padding: 0;
+  text-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #fff;
+  overflow: auto;
 }
 h4 {
-  color:#000;
-  font-size:0.55rem;
-  line-height:0.6rem;
+  color: #000;
+  font-size: 0.55rem;
+  line-height: 0.6rem;
   margin: 0;
-  padding:0;
-  text-shadow: 0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF;
+  padding: 0;
+  text-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #fff;
 }
