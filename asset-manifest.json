@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/horned-beasts-v2/static/css/main.eee1c766.css",
-    "main.js": "/horned-beasts-v2/static/js/main.280549e6.js",
+    "main.css": "/horned-beasts-v2/static/css/main.76d46489.css",
+    "main.js": "/horned-beasts-v2/static/js/main.7d62545c.js",
     "static/media/menagerie.jpg": "/horned-beasts-v2/static/media/menagerie.85223b8caefc72a768a8.jpg",
     "static/media/leather.jpg": "/horned-beasts-v2/static/media/leather.22be1367551add4fc0d6.jpg",
     "index.html": "/horned-beasts-v2/index.html",
-    "main.eee1c766.css.map": "/horned-beasts-v2/static/css/main.eee1c766.css.map",
-    "main.280549e6.js.map": "/horned-beasts-v2/static/js/main.280549e6.js.map"
+    "main.76d46489.css.map": "/horned-beasts-v2/static/css/main.76d46489.css.map",
+    "main.7d62545c.js.map": "/horned-beasts-v2/static/js/main.7d62545c.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee1c766.css",
-    "static/js/main.280549e6.js"
+    "static/css/main.76d46489.css",
+    "static/js/main.7d62545c.js"
   ]
 }
