@@ -7,7 +7,7 @@ function Form({ hornsFilter, setHornsFilter }) {
 
   const handleFilter = ({ target: { value } }) => {
     setHornsFilter(value);
-    setTip(value === "" ? defaultTip : `${value}:`);
+    setTip(value === "" ? defaultTip : `Showing ${value} horned beasts.`);
   };
 
   return (

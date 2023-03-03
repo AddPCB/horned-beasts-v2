@@ -17,9 +17,7 @@ function HornedBeast({ beast, handleModal }) {
   };
 
   return (
-    <figure className="HornedBeast" style={{ visibility: beast ? 'visible' : 'hidden' }}>
-      {beast && (
-        <>
+    <figure className="HornedBeast">
           <h2>{beast.title}</h2>
           <img src={beast.imageUrl} alt={beast.title} onClick={handleClick} />
           <figcaption>{beast.description}</figcaption>
@@ -30,8 +28,6 @@ function HornedBeast({ beast, handleModal }) {
               <h4>to vote</h4>
             </span>
           </aside>
-        </>
-      )}
     </figure>
   );
 }
