@@ -2,7 +2,7 @@ import HornedBeast from "./HornedBeast";
 
 function Main({ handleModal, data, hornsFilter }) {
   const filteredData = hornsFilter
-    ? data.filter((beast) => beast.horns === parseInt(hornsFilter, 10))
+    ? data.filter((beast) => beast.horns === parseInt(hornsFilter))
     : data;
   const beastCount = filteredData.length >= 4 ? filteredData.length : 4;
 
