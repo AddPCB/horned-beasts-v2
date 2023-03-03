@@ -1,0 +1,79 @@
+.HornedBeast {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem peru inset;
+  overflow:hidden;
+  background:#FFF;
+}
+
+.HornedBeast img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: zoom-in;
+
+}
+
+.HornedBeast figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 1);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1) 65%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1) 65%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1) 65%);
+  box-sizing: border-box;
+  color: #000;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 0.6rem;
+  padding-top: 0.8rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.HornedBeast .heart {
+  display: flex;
+  position: absolute;
+  margin:0 -0.05rem -0.1rem 0;
+  padding:0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-content: last baseline;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+  height: 1.6rem;
+  width: 1.7rem;
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.HornedBeast .vote-count {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-content:center;
+  font-size: 1rem;
+  line-height:0.7rem;
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 120%;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 0 0.1rem #000;
+  cursor:pointer;
+  overflow:hidden;
+}

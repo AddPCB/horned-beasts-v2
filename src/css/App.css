@@ -1,0 +1,51 @@
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.App {
+  display: grid; 
+  grid-auto-rows: 3fr 16fr 1fr; 
+  justify-content: center; 
+  align-items: stretch; 
+  background: url(../images/menagerie.jpg);
+  background-size:cover;
+  background-position:center;
+}
+
+
+.Main {
+  grid-row: 2;
+  display: grid; 
+  margin:0.3rem 3.5rem;
+  padding:0.5rem 1rem 0.7rem 1rem;
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 1rem 1rem; 
+  justify-content: space-evenly; 
+  align-content: space-evenly; 
+  justify-items: center; 
+  align-items: center; 
+  background-color: rgba(231, 199, 109, 0.342);
+  border:0.5rem peru ridge;
+}
+
+h3 {
+  color:#000;
+  font-size:0.55rem;
+  line-height:0.6rem;
+  letter-spacing:0.05rem;
+  margin: 0;
+  padding:0;
+  text-shadow: 0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF;
+  overflow:auto;
+}
+h4 {
+  color:#000;
+  font-size:0.55rem;
+  line-height:0.6rem;
+  margin: 0;
+  padding:0;
+  text-shadow: 0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF,0 0 0.1rem #FFF;
+}
